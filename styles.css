@@ -1,0 +1,257 @@
+/*
+Challenge:
+Style the app according to the provided design.
+The font is called "Happy Monkey" and can be
+embedded via Google Fonts.
+
+Don't know how to make an image round? Google it!
+Also, consider how you should select the image 
+(class vs id vs element selector).
+*/
+
+
+
+
+
+
+
+
+/*
+Challenge:
+Add colors to the site based on the provided design.
+
+pink: #EFB0C9
+blue: #a2d2ff
+white: #ffffff
+*/
+
+
+/*
+Challenge:
+Change the site's background into a gradient that goes
+from blue at the top to pink at the bottom.
+*/
+
+
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: linear-gradient(#a2d2ff, #EFB0C9);
+    color: #ffffff;
+    border: 20px dotted rgb(159, 159, 204);
+    
+}
+
+
+h1, h2, h3, h4, p {
+    text-shadow: 1px 1px 1px black;
+}
+
+
+#bff-img {
+    display: block;
+    width: 250px;
+    border-radius: 50%;
+    border: 6px solid #EFB0C9;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*
+Challenge:
+First, wrap the HTML elements in a <div> with an 
+id called "header".
+
+Then, select the "header" and use flexbox to achieve
+the layout you've been provided in the design slide.
+*/
+
+
+/*
+Challenge:
+Make the bday elements look like the
+provided design slide.
+*/
+
+
+
+#bday-age {
+    background: #EFB0C9;
+    padding: 5px 20px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+
+}
+
+
+#bday-date {
+    background: #EFB0C9;
+    padding: 5px 20px;
+    border-radius: 10%;
+    margin-top: 5px;
+}
+
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1px;
+}
+
+
+/*
+Challenge:
+1. Create a "gift-section" <div> that will wrap
+   all the elements for the first gift.
+2. Add the <h2>, <h3>, and <img> elements, and
+   give all of them their own classes.
+3. Style the elements according to the design.
+
+PS: the image should be 400px wide.
+*/
+
+
+.first-gift-title {
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0px;
+}
+
+.first-gift-img {
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("https://www.memecreator.org/static/images/memes/5308995.jpg");
+    background-size: cover;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+/*
+Challenge:
+"Fix" the "gift-img" <div> so that it looks 
+like the provided design again.
+
+It needs a height (should be a square), a
+background image, and to be centered again.
+*/
+
+
+.first-gift-img:hover{
+    background-image: url(https://media4.giphy.com/media/i157x7wHuLJvtTslX6/giphy.gif?cid=ecf05e47t2jgxpae9ernl82l4c3yybnrcmbqnzhe4wq9yqro&rid=giphy.gif&ct=g);
+    background-size: 113%;
+    width: 400px;
+    height: 500px;
+}
+
+
+/*
+Challenge:
+Create the next GIFt (hot.gif). Its HTML structure 
+should be like the previous one, but without the 
+"gift-hint" element.
+
+However, now that you have multiple GIFts on the page,
+you cannot use the "gift-img" class to set the GIF 
+background-image(s) on :hover. Each GIFt will need a 
+unique id that controls which background image that 
+should be shown when hovering over the element.
+*/
+
+.second-gift-img{
+    margin: 0 auto;
+    width: 400px;
+    height: 305px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("https://i.pinimg.com/736x/16/5f/d8/165fd8dff71f89044b485cf1240e77a4.jpg");
+    background-size: 108%;
+    background-repeat: inherit;
+}
+
+.second-gift-img:hover{
+    background-image: url(https://media0.giphy.com/media/6k6iDdi5NN8ZO/giphy.gif?cid=ecf05e47fjmygw5j6fkp23xwfi1mgkv9ad8wqenrz3vecfk4&rid=giphy.gif&ct=g);
+
+}
+
+.third-gift-img{
+    margin: 0 auto;
+    width: 560px;
+    height: 530px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("https://i.pinimg.com/474x/db/67/22/db672258ead434b18330957d20b484f1.jpg");
+    background-size: 100%;
+    background-repeat: inherit;
+}
+
+.third-gift-img:hover{
+    background-image: url(https://media1.giphy.com/media/QU9osQSr0BNK8ON3fg/giphy.gif?cid=ecf05e479owh9pczoz36hm2iz5j7bn93b6zthgg0sdyg1f5h&rid=giphy.gif&ct=g);
+    width: 660px;
+    height: 530px;
+    background-size: cover;
+
+}
+
+
+.fourth-gift-img{
+    margin: 0 auto;
+    width: 380px;
+    height: 530px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("https://www.recreoviral.com/wp-content/uploads/2019/05/cumplea%C3%B1os-recreoviral-1.png");
+    background-size: contain;
+}
+
+.fourth-gift-img:hover{
+    background-image: url(https://media3.giphy.com/media/WiM5K1e9MtEic/giphy.gif?cid=ecf05e472e1o0lq9pkf8u0o4mlq2gz0paqeammcffro5vyua&rid=giphy.gif&ct=g);
+    width: 580px;
+    height: 530px;
+    background-size: cover;
+}
+
+
+/*
+Challenge:
+Create the "cheers" GIFt section.
+
+Note: this GIFt should have a height of 200px. 
+Select the #gift-img-cheers id and override 
+the height that the element got from the 
+.gift-img class.
+
+Text: 
+This one's for you, my friend 🥂
+*/
+
+
+
+
+.fifht-gift-img{
+    margin: 0 auto;
+    width: 380px;
+    height: 200px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("https://i.ytimg.com/vi/AQePJD3mbDc/mqdefault.jpg");
+    background-size: contain;
+    margin-bottom: 20px;
+
+}
+
+
+.fifht-gift-img:hover{
+    background-image: url(https://media4.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif?cid=ecf05e47towvv24aq5oqwb2f5jx1nt063ta4y9n3t57w5cfo&rid=giphy.gif&ct=g);
+}
+
